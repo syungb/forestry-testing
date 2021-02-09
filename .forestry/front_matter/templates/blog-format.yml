@@ -39,7 +39,7 @@ fields:
 - name: category
   type: tag_list
   default: []
-  label: category
+  label: categories
 - name: app_version
   type: number
   description: ''
