@@ -12,7 +12,7 @@ fields:
   type: text
   config:
     required: false
-  label: summary
+  label: description
 - name: date
   type: datetime
   label: date
