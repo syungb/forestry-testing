@@ -3,7 +3,6 @@ app_version = 1
 banner_image = "/uploads/ddeok.jpg"
 category = []
 date = 2021-02-09T05:00:00Z
-draft = true
 published_date = 2021-02-10T05:00:00Z
 summary = "trying to figure out why cats are so cute"
 title = "why cats are so cute"
