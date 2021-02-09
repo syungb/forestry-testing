@@ -1,0 +1,41 @@
+---
+label: blog-format
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: summary
+  type: text
+  config:
+    required: false
+  label: summary
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: published_date
+  type: datetime
+  label: published date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: banner_image
+  type: file
+  config:
+    maxSize: 64
+  label: banner image
+- name: category
+  type: tag_list
+  default: []
+  label: category
