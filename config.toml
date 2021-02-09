@@ -1,4 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Hugo Blog"
-theme = "blog"
+title = "Blog"
+theme = "Blogpaper"
+
+[params]
+  description = "Blog description"
