@@ -1,4 +1,5 @@
 baseURL = "http://example.org/"
+metaDataFormat = "yaml"
 languageCode = "en-us"
 title = "Blog"
 theme = "harbor"
