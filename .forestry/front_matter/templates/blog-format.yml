@@ -50,5 +50,3 @@ fields:
     max: 
     step: 
   label: app version
-pages:
-- content/blogs/second-post.md
