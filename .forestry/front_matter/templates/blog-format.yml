@@ -60,3 +60,5 @@ fields:
       file: 
       path: 
   label: category
+pages:
+- content/how-does-this-happen.md
