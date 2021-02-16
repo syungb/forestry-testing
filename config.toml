@@ -1,4 +1,5 @@
 baseURL = "/"
+ignoreErrors = ["error-output-taxonomy"]
 metaDataFormat = "yaml"
 languageCode = "en-us"
 title = "blogs"
@@ -11,11 +12,11 @@ mediatype = "application/json"
   page = ["json"]
   home = ["json"]
   section = ["json"]
-  taxonomy = ["JSON"]
-  taxonomyTerm = ["JSON"]
+  taxonomy = ["json"]
+  taxonomyTerm = ["json"]
 
 [taxonomies]
-  category = "categories"
+  category = "category"
 
 [permalinks]
   category = "/:section/:title"

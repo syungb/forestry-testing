@@ -1,5 +1,5 @@
 ---
-category: []
+category: "hi"
 app_version: 1
 title: second post
 summary: this would..work?

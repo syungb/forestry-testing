@@ -1,4 +1,5 @@
 ---
+category: "[bye]"
 app_version: 1
 banner_image: "/uploads/ddeok.jpg"
 category: []
