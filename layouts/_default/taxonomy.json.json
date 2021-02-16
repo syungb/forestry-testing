@@ -1,0 +1,17 @@
+{{ define "response" }}
+{{- $categories := .Data.Pages -}}
+    {
+        "file" : "taxonomy.json.json",
+        "title": "{{ .Title }}",
+        "date": "{{ .Date }}",
+        "type": "{{ .Type }}",
+        "permalink" : "{{ .Permalink }}",
+        "group" : "{{.Type}}::{{ .Title }}",
+        "count" : "{{ len $categories }}",
+        "categories" : [
+        {{ range $i, $e := $categories }}
+            {{ if $i }}, {{ end }}{{ .Render "list" }}
+        {{ end }}
+        ]
+    }
+{{ end }}

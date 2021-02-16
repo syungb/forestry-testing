@@ -1,0 +1,13 @@
+{
+    "file" : "category.json.json",
+    "title": "{{ .Title }}",
+    "type": "{{ .Type }}",
+    "permalink" : "{{ .Permalink }}",
+    "category" : "{{ .Params.category }}",
+    "count" : "{{ len $.Data.Pages }}",
+    "items" : [
+                {{ range $i, $e := $.Data.Pages }}
+                    {{ if $i }}, {{ end }}{{ .Render "item" }}
+                {{ end }}
+              ]
+}

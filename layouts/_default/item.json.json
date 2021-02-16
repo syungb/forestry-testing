@@ -1,0 +1,9 @@
+{
+    "title": "{{ .Title }}",
+    "date": "{{ .Date }}",
+    "type": "{{ .Type }}",
+    "permalink" : "{{ .Permalink }}",
+    "summary" : "{{ .Summary }}",
+    "category" : "{{ .Params.category }}",
+    "content": "{{ .Content }}"
+}

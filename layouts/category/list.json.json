@@ -1,0 +1,15 @@
+{{ define "response" }}
+{{- $categories := .Data.Pages -}}
+    {
+            "file" : "list.json.json",
+            "type" : "{{.Type}}",
+            "group" : "{{ .Title }}",
+            "permalink" : "{{ .Permalink }}",
+            "count" : "{{ len $categories }}"
+            ,"items" : [
+            {{ range $i, $e := $categories }}
+                {{ if $i }}, {{ end }}{{ .Render "category" }}
+            {{ end }}
+            ]
+    }
+{{ end }}

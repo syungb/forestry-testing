@@ -1,8 +1,22 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 metaDataFormat = "yaml"
 languageCode = "en-us"
-title = "Blog"
-theme = "harbor"
+title = "blogs"
 
-[params]
-  description = "Blog description"
+[outputFormats.category]
+baseName = "category"
+mediatype = "application/json"
+
+[outputs]
+  page = ["json"]
+  home = ["json"]
+  section = ["json"]
+  taxonomy = ["JSON"]
+  taxonomyTerm = ["JSON"]
+
+[taxonomies]
+  category = "categories"
+
+[permalinks]
+  category = "/:section/:title"
+  page = "/:section/:title"
